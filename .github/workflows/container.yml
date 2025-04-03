@@ -17,3 +17,5 @@ jobs:
         context: .
         push: true
         tags: matosauer/contoso-spaces-web:latest
+        secrets: |
+          GIT_AUTH_TOKEN=${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
