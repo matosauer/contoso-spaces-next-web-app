@@ -26,6 +26,20 @@ https://github.com/actions/create-release
 An Action to upload a release asset via the GitHub Release API
 https://github.com/actions/upload-release-asset
 
+Build a docker image
+docker build --tag matosauer/contoso-spaces-web:1.0 .
+
+Run that Docker image
+docker run --detach --publish 5000:80 matosauer/contoso-spaces-web:1.0
+
+so the built website run from image can be verified locally on
+http://localhost:5000/
+
+Build and push an image to Docker
+https://github.com/docker/build-push-action
+
+
+
 
 
 
